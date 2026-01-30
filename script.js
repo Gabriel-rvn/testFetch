@@ -2,7 +2,7 @@ const tagName = document.getElementById("tagName");
 const searchButton = document.getElementById("searchTagName");
 const resultadoDeBusca = document.getElementById("resultadoDeBusca");
 
-const API_KEY = "RGAPI-8fae4173-7386-4b68-aa67-1761a0237796";
+const API_KEY = "xxx";
 
 const accountUrl = "https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id";
 
