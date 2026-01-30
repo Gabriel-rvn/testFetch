@@ -1,7 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    color: #c8aa6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
-    background-color:pink;
-    padding: 20px;
-    margin: auto;
-    width: 20%;
-    box-shadow: 0 5px 10px;
+    background-color: #1e2328;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3c3c41;
+}
+
+.title {
+    text-align: center;
+    color: #f0e6d2;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-bottom: 2px solid #c8aa6e;
+    padding-bottom: 10px;
+}
+
+.add-name {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#tagName {
+    flex-grow: 1;
+    padding: 12px;
+    background-color: #091428;
+    border: 1px solid #c8aa6e;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#tagName:focus {
+    box-shadow: 0 0 8px rgba(200, 170, 110, 0.4);
+}
+
+#searchTagName {
+    padding: 12px 24px;
+    background-color: #0ac8b9;
+    color: #091428;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+#searchTagName:hover {
+    background-color: #0cdcd0;
+}
+
+.resultBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resultBox > div {
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282830;
+    color: white;
+    border-left: 5px solid #888;
+}
+
+.resultBox > div.vitoria, .resultBox > div.win {
+    background-color: rgba(40, 52, 78, 0.9);
+    border-left-color: #5383e8;
+    color: #9ac5db;
+}
+
+.resultBox > div.derrota, .resultBox > div.loss {
+    background-color: rgba(89, 52, 59, 0.9);
+    border-left-color: #e84057;
+    color: #ff9b9b;
 }
